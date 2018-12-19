@@ -1,0 +1,129 @@
+1. Testing S1: String default ctor.
+
+"" Length is 0
+
+
+2. Testing S2: String one arg (char *) ctor.
+
+"ABC" Length is 3
+
+
+3. Testing S3: String one arg (char) ctor.
+
+"Z" Length is 1
+
+
+4. Testing S4: String one arg (int) ctor.
+
+"" Length is 10
+
+
+5. Testing S5, T5: String copy ctor.
+
+"Purple Rain" Length is 11
+"Purple Rain" Length is 11
+
+
+6. Testing S6: String two arg (char, int) ctor.
+
+"**********" Length is 10
+
+
+7. Testing S7, T7, U7: String assignment.
+
+"Sally Ride" Length is 10
+"Sally Ride" Length is 10
+"Sally Ride" Length is 10
+
+
+8. Testing S8: String assignment.
+
+"ABC" Length is 3
+
+
+9. Testing S9: Implicit type conversion.
+
+"ABC" Length is 3
+
+
+10. Testing S10, T10, U10: String concatenation.
+
+"ABCDEFGHI" Length is 9
+"XABCDEFGHI" Length is 10
+
+
+11. Testing S11, T11: String concatenation.
+
+"ABCDABCD" Length is 8
+"BCD" Length is 3
+
+
+12. Testing S12, T12: String unary operator.
+
+"Unary +" Length is 7
+"UNARY +" Length is 7
+"UNARY +" Length is 7
+
+
+13. Testing S13, T13: String comparison operators.
+
+"ABC" Length is 3
+"ABCD" Length is 4
+
+== False
+!= True
+<  True
+<= True
+>  False
+>= False
+
+
+14. Testing S14: Overloaded subscript operator.
+
+Error: Illegal operation. Index out of range.  Halt.
+
+"D,,!jt!gvo/" Length is 11
+
+
+15. Testing S15: Pointer notation.
+
+BCDEF
+
+
+16. Testing S16, T16, U16, V16, W16, X16, Y16, Z16: Increment and decrement operators.
+
+"BCD" Length is 3
+"BCD" Length is 3
+"BCD" Length is 3
+"ABC" Length is 3
+"@AB" Length is 3
+"@AB" Length is 3
+"@AB" Length is 3
+"ABC" Length is 3
+
+
+17. Testing S17, T17: Substr function.
+
+"All You Need Is Love" Length is 20
+"You Need" Length is 8
+
+
+18. Testing S18, T18: Output function.
+
+Red-Green-Blue
+
+
+19. Testing S19, T19, U19: ReverseString class.
+
+"Computer" Length is 8
+"retupmoC" Length is 8
+"Computer" Length is 8
+
+
+20. Testing S20, T20, U20: CaseString class.
+
+"BaLLooN"  Length is: 7 Upper is: "BALLOON"  Lower is: "balloon" 
+"BaLLooN"  Length is: 7 Upper is: "BALLOON"  Lower is: "balloon" 
+"BaLLooN"  Length is: 7 Upper is: "BALLOON"  Lower is: "balloon" 
+
+

@@ -1,0 +1,342 @@
+1. Array declared with single integer: IntArray a(10);
+
+a[0] = 0
+a[1] = 10
+a[2] = 20
+a[3] = 30
+a[4] = 40
+a[5] = 50
+a[6] = 60
+a[7] = 70
+a[8] = 80
+a[9] = 90
+
+2. Array declared with two integers: IntArray b(-3, 6);
+
+b[-3] = -30
+b[-2] = -20
+b[-1] = -10
+b[0] = 0
+b[1] = 10
+b[2] = 20
+b[3] = 30
+b[4] = 40
+b[5] = 50
+b[6] = 60
+
+3. Array declared with two integers: IntArray c(6, 8);
+
+c[6] = 60
+c[7] = 70
+c[8] = 80
+
+4. Array declared with two identical integers: IntArray d(5, 5);
+
+d[5] = 50
+
+5. Array declared with no integers: IntArray z;
+
+z[0] = 0
+z[1] = 10
+z[2] = 20
+z[3] = 30
+z[4] = 40
+z[5] = 50
+z[6] = 60
+z[7] = 70
+z[8] = 80
+z[9] = 90
+
+6. Array declared with another object of type IntArray: IntArray c(6, 8);
+                                                        Intarray e(c);
+
+c[6] = 60
+c[7] = 70
+c[8] = 80
+
+e[6] = 60
+e[7] = 70
+e[8] = 80
+
+7. Array assigned to another array w/ different indices: IntArray f(1, 4);
+                                                         IntArray g(5, 8);
+                                                         f = g;
+
+f[1] = 10
+f[2] = 20
+f[3] = 30
+f[4] = 40
+
+g[5] = 50
+g[6] = 60
+g[7] = 70
+g[8] = 80
+
+f[1] = 50
+f[2] = 60
+f[3] = 70
+f[4] = 80
+
+g[5] = 50
+g[6] = 60
+g[7] = 70
+g[8] = 80
+
+8. Multiple array assignment with different indices: IntArray j(3, 6);
+                                                     IntArray k(6, 9);
+                                                     IntArray l(1, 4);
+                                                     j = k = l;
+
+j[3] = 30
+j[4] = 40
+j[5] = 50
+j[6] = 60
+
+k[6] = 60
+k[7] = 70
+k[8] = 80
+k[9] = 90
+
+l[1] = 10
+l[2] = 20
+l[3] = 30
+l[4] = 40
+
+j[3] = 10
+j[4] = 20
+j[5] = 30
+j[6] = 40
+
+k[6] = 10
+k[7] = 20
+k[8] = 30
+k[9] = 40
+
+l[1] = 10
+l[2] = 20
+l[3] = 30
+l[4] = 40
+
+9. Overloaded equality operator (identical elements): IntArray m(3, 7);
+                                                      IntArray n(1, 5);
+                                                      m == n
+
+m[3] = 30
+m[4] = 40
+m[5] = 50
+m[6] = 60
+m[7] = 70
+
+n[1] = 10
+n[2] = 20
+n[3] = 30
+n[4] = 40
+n[5] = 50
+
+m[3] = 10
+m[4] = 20
+m[5] = 30
+m[6] = 40
+m[7] = 50
+
+n[1] = 10
+n[2] = 20
+n[3] = 30
+n[4] = 40
+n[5] = 50
+
+Returns True.
+
+10. Overloaded equality operator (different elements): IntArray o(3, 7);
+                                                       IntArray p(1, 5);
+                                                       o == p
+
+o[3] = 30
+o[4] = 40
+o[5] = 50
+o[6] = 60
+o[7] = 70
+
+p[1] = 10
+p[2] = 20
+p[3] = 30
+p[4] = 40
+p[5] = 50
+
+Returns False.
+
+11. Overloaded equality operator (different size arrays): IntArray q(1, 3);
+                                                          IntArray r(1, 4);
+                                                          q == r;
+
+q[1] = 10
+q[2] = 20
+q[3] = 30
+
+r[1] = 10
+r[2] = 20
+r[3] = 30
+r[4] = 40
+
+Returns False.
+
+12. Overloaded inequality operator (identical elements): IntArray s(3, 7);
+                                                         IntArray t(1, 5);
+                                                         s != t;
+
+s[3] = 30
+s[4] = 40
+s[5] = 50
+s[6] = 60
+s[7] = 70
+
+t[1] = 10
+t[2] = 20
+t[3] = 30
+t[4] = 40
+t[5] = 50
+
+s[3] = 10
+s[4] = 20
+s[5] = 30
+s[6] = 40
+s[7] = 50
+
+t[1] = 10
+t[2] = 20
+t[3] = 30
+t[4] = 40
+t[5] = 50
+
+Returns False.
+
+13. Overloaded inequality operator (different elements): IntArray u(3, 7);
+                                                         IntArray v(1, 5);
+                                                         u != v;
+
+u[3] = 30
+u[4] = 40
+u[5] = 50
+u[6] = 60
+u[7] = 70
+
+v[1] = 10
+v[2] = 20
+v[3] = 30
+v[4] = 40
+v[5] = 50
+
+Returns True.
+
+14. Overloaded inequality operator (different size arrays): IntArray w(1, 3);
+                                           IntArray x(1, 4);
+                                           w != x;
+
+w[1] = 10
+w[2] = 20
+w[3] = 30
+
+x[1] = 10
+x[2] = 20
+x[3] = 30
+x[4] = 40
+
+Returns True.
+
+15. Sum of two arrays assigned to third array: IntArray a(1, 5);
+                                               IntArray b(4, 8);
+                                               IntArray c = a + b;
+
+a[1] = 10
+a[2] = 20
+a[3] = 30
+a[4] = 40
+a[5] = 50
+
+b[4] = 40
+b[5] = 50
+b[6] = 60
+b[7] = 70
+b[8] = 80
+
+c[1] = 50
+c[2] = 70
+c[3] = 90
+c[4] = 110
+c[5] = 130
+
+16. Sum of two arrays assigned to first array: IntArray d(10, 13);
+                                               IntArray e(30, 33);
+                                               d += e;
+
+d[10] = 100
+d[11] = 110
+d[12] = 120
+d[13] = 130
+
+e[30] = 300
+e[31] = 310
+e[32] = 320
+e[33] = 330
+
+d[10] = 400
+d[11] = 420
+d[12] = 440
+d[13] = 460
+
+17. Array declared with illegal array bounds: IntArray f(5, 2);
+
+Error: Illegal array bounds.  Lower index greater than upper index.  Halt.
+
+
+
+18. Array with index out of range: IntArray g(10);
+                                   g[10] = 1;
+
+g[0] = 0
+g[1] = 10
+g[2] = 20
+g[3] = 30
+g[4] = 40
+g[5] = 50
+g[6] = 60
+g[7] = 70
+g[8] = 80
+g[9] = 90
+
+Error: Illegal operation. Index out of range.  Halt.
+
+19. Arrays with length mismatch: IntArray m(1, 4);
+                                 IntArray n(2, 4);
+                                 m = n;
+
+m[1] = 10
+m[2] = 20
+m[3] = 30
+m[4] = 40
+
+n[2] = 20
+n[3] = 30
+n[4] = 40
+
+Error: Illegal operation.  Array lengths unequal.  Halt.
+
+m[1] = 10
+m[2] = 20
+m[3] = 30
+m[4] = 40
+
+n[2] = 20
+n[3] = 30
+n[4] = 40
+
+20. Array subscript operator: IntArray o(7, 8);
+                              o[7] = 25;
+                              o[8] = o[7];
+
+o[7] = 70
+o[8] = 80
+
+o[7] = 25
+o[8] = 25
+
