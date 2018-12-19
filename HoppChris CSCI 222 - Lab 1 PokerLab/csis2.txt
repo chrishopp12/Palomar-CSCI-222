@@ -1,0 +1,13 @@
+  Trial Number   Number of Hands Dealt         Number of pairs       Number of flushes           Percent pairs         Percent Flushes
+             1                   10000                    4879                      22                   48.79                    0.22
+             2                   10000                    4983                      12                   49.83                    0.12
+             3                   10000                    4963                      32                   49.63                    0.32
+             4                   10000                    4938                      24                   49.38                    0.24
+             5                   10000                    4893                      27                   48.93                    0.27
+             6                   10000                    4928                      26                   49.28                    0.26
+             7                   10000                    4986                      32                   49.86                    0.32
+             8                   10000                    4920                      20                   49.20                    0.20
+             9                   10000                    4876                      20                   48.76                    0.20
+            10                   10000                    4856                      15                   48.56                    0.15
+Total flush percentage:           0.23
+Total pair percentage:          49.22
